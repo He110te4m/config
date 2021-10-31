@@ -1,0 +1,65 @@
+" For Chinese
+
+" close vi model
+set nocompatible
+" set encoding
+set encoding=utf-8
+" set terminal encoding
+set termencoding=utf-8
+" set file encoding
+set fileencoding=utf-8
+" try these encoding to open file
+set fileencodings=ucs-bom,utf-8,gbk,default,latin1
+" set Chinese help
+set helplang=cn
+
+
+" For normal setting
+
+" highlight code
+syntax on
+" set line number
+set nu
+" auto match bracket
+set showmatch
+" auto indentify file type
+filetype plugin indent on
+" use space replace tab
+set expandtab
+" auto indent
+setl shiftwidth=4
+setl tabstop=4
+au FileType html,vim setl shiftwidth=2
+au FileType html,vim setl tabstop=2
+au FileType java,php,python,javascript,go setl shiftwidth=4
+au FileType java,php,python,javascript,go setl tabstop=4
+" auto align
+set ai
+set si
+set smarttab
+set wrap
+set lbr
+set tw=0
+set foldmethod=syntax
+
+" More setting
+
+" set color scheme
+colorscheme molokai
+" set how many lines of history vim has remember
+set history=500
+" auto read file if this file changed from outside
+set autoread
+" support position by mouse click
+set mouse=a
+" set cmd height
+set cmdheight=2
+" Change buffer - without saving
+set hid
+" highlight the result of sraech
+set hlsearch
+" smart backspace
+set backspace=start,indent,eol
+
+" autoload config file when config is change
+autocmd! bufwritepost .vimrc source /etc/vimrc
