@@ -12,8 +12,13 @@ alias gbd='gb -D'
 alias gco='git checkout'
 alias gcom='gco main'
 
+alias gs='git status'
+alias gl='git log'
+alias gd='git diff'
+
 alias yd='yarn dev'
 alias ys='yarn start'
 alias yb='yarn build'
 alias yt='yarn test'
 
+alias init='yarn && yb'
